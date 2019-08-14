@@ -1,0 +1,17 @@
+{
+	"p1": {
+			"name": "Sergey",
+			"age": 37,
+			"company": "home"
+			},
+	"p2": {
+			"name": "Juli-a",
+			"age": 39,
+			"company": "home_too"
+			},
+	"link1": {
+				"href": "r1",
+				"id": "for_1",
+				"name": "Link for display"
+				}
+}

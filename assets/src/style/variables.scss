@@ -1,0 +1,40 @@
+//$enable-shadows: true;//включил тени
+
+//изменённые цвета
+$red:      #7e00ff;//он же $danger для фона и меню
+$cyan:     #7000e0;//он же $info второй основной цвет макета
+$gray-100: #e6e6e6;//он же $light для bg основного контента и линий разделения в правом блоке от него
+$gray-600: #f6f6f6;//он же $secondary для bg левой колонки от контента
+$gray-800: #3c3c3c;//он же $dark цвет текста
+
+
+//поменял порядок шрифтов
+$font-family-base: sans-serif, "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//поменял цвет основного фона
+$body-bg: $cyan;
+
+//максимальная ширина контейнера изменена с учетом отступов
+$container-max-widths: (
+  sm: 600px, //изменённый фрагмент
+  md: 768px,
+  lg: 1024px,
+  xl: 1230px //изменённый фрагмент по ТЗ
+);
+//
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px, //изменено значение в соответствии с ТЗ
+  xl: 1200px
+);
+
+//изменение размера шрифта в lg (в основном для кнопки меню)
+$font-size-lg: 1.5rem;
+//изменение отступов в кнопках lg
+$input-btn-padding-y-lg:     0rem;
+$input-btn-padding-x-lg:     0.5rem;
+
+//размер бордюра
+$border-width: 4px; //для блоков
+$btn-border-width: 2px; //для кнопок

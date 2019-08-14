@@ -1,0 +1,54 @@
+doctype html
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+	link(rel='stylesheet' href='css/main.min.css')
+	title Test Bootstrap
+body.text-white
+
+	.container.overflow-hidden.bg-danger
+
+		header.row.height-100.justify-content-beetwen.flex-nowrap
+			.col-2.my-auto
+				button.btn.btn-light.btn-lg.fa.fa-bars.text-danger(type='button' data-toggle='collapse' data-target="#menu_toggle")
+			.col.col-sm-5.col-xs-3.my-auto
+				p.logo.h1 Company logo
+			.col.my-auto.text-right
+
+				.dropdown
+					button.btn.btn-light.btn-lg.dropdown-toggle.text-danger.mr-3.ml-0(type='button' data-toggle='dropdown') Options
+					.dropdown-menu
+						a#ru.dropdown-item.text-danger.pl-3(href='#' title='Russian')
+							b Russian
+						a#en.dropdown-item.text-danger.pl-3(href='#' title='English')
+							b English
+
+
+		section.content.row.bg-info.overflow-hidden.flex-nowrap
+			nav#menu_toggle.col.width-menu.collapse.show.width.sectionForScroll
+				ul#menu.nav.h4.itemForScroll.p-0
+
+			section#menu_toggle.width-left-content.sectionForScroll.col-auto.p-0.bg-white.border-right.border-danger.collapse.width.dont-collapse-sm
+				.itemForScroll.p-0
+					#left_content.container
+
+			section#content.col.bg-light.text-dark.sectionForScroll.width-content
+				#content_here.itemForScroll.p-3
+
+
+			section#contentDetails.col-lg.col-md-0.bg-white.text-dark.width-right-content.border-left.border-danger.sectionForScroll.d-none.d-lg-block
+				#right_content.itemForScroll
+
+		footer.row.height-100.justify-content-between
+			.col.my-auto
+				p.h6.m-0 &copy; Copyright 2017
+			.col.my-auto.text-right
+				button.btn.btn-light.btn-lg.text-danger(type='button' data-toggle='save')
+					.fa.fa-save
+					|&nbsp;Save
+				button.btn.btn-light.btn-lg.text-white.bg-danger(type='button' data-toggle='back')
+					.fa.fa-share.fa-flip-horizontal
+					|&nbsp;Back
+
+	script(src='js/main.min.js')

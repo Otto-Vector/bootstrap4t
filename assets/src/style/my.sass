@@ -1,0 +1,81 @@
+
+//подправил положение dropdown-стрелки
+.dropdown-toggle::after
+	vertical-align: .18em
+
+//добавил класс для фиксации размеров шапки и подвала
+.height-100
+	height: 100px
+//для создания круга в левой части контента
+.circle-50
+	height: 50px
+	width: 50px
+
+//данное правило создано для того чтобы  футер всегда был внизу
+//а шапка наверху
+.container
+	display: flex
+	min-height: 100vh
+	flex-direction: column
+//но при этом при изменении высоты оставалось хотя бы 300px контента
+.content
+	flex: 1 1 300px
+
+//фиксированные широты для столбцов в блоке контента
+//для меню
+.width-menu
+	flex: 0 0 310px
+//для левой части от сновноного контена
+.width-left-content
+	flex: 0 0 250px
+//для правой части от основного контента
+.width-right-content
+	flex: 0 0 250px
+
+//сектор для создания возжможности вертикального скрола
+.sectionForScroll
+	position: relative//использование position-relative не дало нужного эффекта
+	overflow-x: hidden//такой команды нет
+.itemForScroll
+	position: absolute//использование position-absolute не дало нужного эффекта
+	top: 0//растянул
+	bottom: 0//на весь
+	left: 0//родительский блок
+	right: -17px//(-17px) убрал видимость скрола в паре с overflo-x:hidden родительского элемента
+	overflow-x: hidden //выключил горизонтальный скрол
+	overflow-y: auto//включил вертикальный скролл
+
+//bootstrap4 очень слабые тени, не соответствующие макету
+//тень бокового меню
+nav
+	box-shadow: 0px 0px 7px 0px #333
+	position: relative//чтобы тень наложилась на предыдущий контент
+	z-index: 3000
+//тень подвала
+footer
+	box-shadow: 0px 0px 7px 0px #333
+	position: relative //чтобы тень наложилась на предыдущий контент
+
+
+//КУСКИ АДАПТИВНОЙ ВЁРСТКИ
+
+//для смены левого контентного блока местами с меню
+//был создан данный медиа
+@media (min-width: 1024px)
+	.collapse.dont-collapse-sm
+		display: block
+		height: auto !important
+		visibility: visible
+//ниже прописано исчезновение данного блока
+//потому как первое правило конфликтует с d-sm-none.d-md-block
+@media (max-width: 768px)
+	.collapse.dont-collapse-sm
+		display: none
+
+//адаптив для текста в логотипе
+@media (max-width: 768px)
+	.logo
+		font-size: 2rem
+@media (max-width: 576px)
+	.logo
+		font-size: 1.5rem
