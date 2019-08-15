@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
+    "url": "git://github.com/Otto-Vector/bootstrap4t.git"
   },
   "dependencies": {
     "jquery": "^3.4.1",
