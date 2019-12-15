@@ -22,7 +22,7 @@ var source = {
 				links: "../json/english/links.json",
 				left_content: "../json/english/left_content.json",
 				content: "../json/english/content.json",
-				right_content: "../json/english/rigth_content.json"
+				right_content: "../json/english/rigth_content.json",
 					},
 		russian: {
 				links: "../json/russian/links.json",
@@ -92,4 +92,6 @@ $.getJSON(path.right_content, function(content) {
 		});
 	});
 
-};
+}
+
+//console.log('errors NOT FOUND!!!');
