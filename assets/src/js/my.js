@@ -19,16 +19,16 @@ $("#en").click(function(){
 //массив путей к файлам
 var source = {
 		english: {
-				links: "../json/english/links.json",
-				left_content: "../json/english/left_content.json",
-				content: "../json/english/content.json",
-				right_content: "../json/english/rigth_content.json",
+				links: "../build/json/english/links.json",
+				left_content: "../build/json/english/left_content.json",
+				content: "../build/json/english/content.json",
+				right_content: "../build/json/english/rigth_content.json",
 					},
 		russian: {
-				links: "../json/russian/links.json",
-				left_content: "../json/russian/left_content.json",
-				content: "../json/russian/content.json",
-				right_content: "../json/russian/rigth_content.json"
+				links: "../build/json/russian/links.json",
+				left_content: "../build/json/russian/left_content.json",
+				content: "../build/json/russian/content.json",
+				right_content: "../build/json/russian/rigth_content.json"
 					}
 		};
 //массив объектов в которых меняется контент
